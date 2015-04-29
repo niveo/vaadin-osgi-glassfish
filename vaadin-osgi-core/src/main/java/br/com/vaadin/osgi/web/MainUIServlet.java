@@ -5,7 +5,12 @@ import com.vaadin.server.DeploymentConfiguration;
 import com.vaadin.server.ServiceException;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.server.VaadinServletService;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 
+@WebServlet(name = "vaadin", value = "/*", asyncSupported = true, initParams = {
+    @WebInitParam(name = "UI", value = "br.com.vaadin.osgi.web"),
+    @WebInitParam(name = "productionMode", value = "false")})
 @VaadinServletConfiguration(productionMode = false,
         ui = MainUI.class,
         widgetset = "br.com.vaadin.osgi.web.MainWidgetset")
