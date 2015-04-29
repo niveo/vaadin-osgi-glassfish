@@ -1,5 +1,6 @@
 # vaadin-osgi-glassfish
-VAADIN 7 - OSGI - GLASSFISH
+
+NETBEANS: VAADIN 7 - OSGI - GLASSFISH 4
 
 ========================================
 
