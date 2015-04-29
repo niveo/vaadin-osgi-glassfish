@@ -9,7 +9,7 @@ import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet(name = "vaadin", value = "/*", asyncSupported = true, initParams = {
-    @WebInitParam(name = "UI", value = "br.com.vaadin.osgi.web"),
+    @WebInitParam(name = "UI", value = "br.com.vaadin.osgi.web.MainUI"),
     @WebInitParam(name = "productionMode", value = "false")})
 @VaadinServletConfiguration(productionMode = false,
         ui = MainUI.class,
